@@ -14,18 +14,28 @@
     position: relative;
 }
 
-.border-nav-hover {
+.navigation-item {
+    display: inline-block;
+    margin-top: 8px;
+    margin-right: 50px;
+    color: rgba(61, 61, 61, 1);
+    text-decoration: none;
+    position: relative;
+}
+
+.navigation-item::before {
+    content: '';
     height: 3px;
-    background-color:rgba(70, 163, 88, 1);
+    background-color: rgba(70, 163, 88, 1);
     position: absolute;
     display: none;
-    top: 44px;
+    top: 44px; /* Adjust this value as needed */
     left: 0;
     right: 0;
     width: 100%;
 }
 
-.navigation-item:hover .border-nav-hover {
+.navigation-item:hover::before {
     display: block;
 }
 
