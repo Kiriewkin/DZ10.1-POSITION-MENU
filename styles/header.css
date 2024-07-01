@@ -63,7 +63,8 @@
 .sub-list-first-level {
     padding-top: 42px;
     top: 25px;
-    left: -50%;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .sub-list-second-level {
